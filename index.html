@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registros com localStorage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Registros</h1>
+
+    <form id="form">
+      <label for="nome">Nome</label>
+      <input id="nome" type="text" required>
+
+      <label for="idade">Idade</label>
+      <input id="idade" type="number" min="0" required>
+
+      <div class="acoes">
+        <button type="submit">Salvar registro</button>
+        <button type="button" id="limpar" class="secundario">Limpar registros</button>
+      </div>
+    </form>
+
+    <ul id="lista"></ul>
+    <p id="vazio">Nenhum registro ainda. Preencha o formulário para adicionar.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

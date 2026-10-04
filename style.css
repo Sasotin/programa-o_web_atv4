@@ -1,0 +1,96 @@
+:root {
+  --fundo: #ffffff;
+  --texto: #1f2933;
+  --suave: #f1f3f5;
+  --borda: #d5d9de;
+  --destaque: #ffd400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--texto);
+  background: var(--fundo);
+}
+
+main {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-size: 1.75rem;
+}
+
+form {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: var(--suave);
+  border-radius: 8px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input {
+  padding: 0.6rem;
+  font: inherit;
+  border: 1px solid var(--borda);
+  border-radius: 6px;
+}
+
+.acoes {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  color: var(--texto);
+  background: var(--destaque);
+  border: 2px solid var(--destaque);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.secundario {
+  background: transparent;
+  border-color: var(--borda);
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--texto);
+  outline-offset: 2px;
+}
+
+ul {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--borda);
+}
+
+#vazio {
+  margin-top: 1.5rem;
+  color: #5f6b76;
+}
+
+#vazio[hidden] {
+  display: none;
+}
